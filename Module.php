@@ -36,28 +36,4 @@ class Module extends \atuin\skeleton\ComposerModule
     {
         return 'cyneek/yii2-routes:dev-master';
     }
-
-    /**
-     * @inheritdoc
-     */
-    public function getModuleClassName()
-    {
-        return 'cyneek\yii2\routes\Module';
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function getModuleDirectory()
-    {
-        return \Yii::$app->getVendorPath() . '/cyneek/yii2-routes';
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function getModuleNamespace()
-    {
-        return 'cyneek\yii2\routes';
-    }
 }
