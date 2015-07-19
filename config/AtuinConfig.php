@@ -63,6 +63,11 @@ class AtuinConfig extends \atuin\skeleton\config\AtuinConfig
             1, FALSE);
         ModelConfig::addConfig(NULL, 'components', 'route', 'class',
             'cyneek\yii2\routes\components\route', FALSE);
+        
+        // adding bootstrap calls
+        ModelConfig::addConfig(NULL, NULL, NULL, 'bootstrap',
+            array('routes'), FALSE);
+        
     }
 
 
