@@ -61,6 +61,9 @@ class AtuinConfig extends \atuin\skeleton\config\AtuinConfig
             dirname(\Yii::$app->getVendorPath()) . '/routes/backend', FALSE);
         ModelConfig::addConfig(NULL, 'modules', 'routes', 'activate_database_routes',
             1, FALSE);
+        ModelConfig::addConfig(NULL, 'modules', 'routes', 'class',
+            'cyneek\yii2\routes\Module', FALSE);
+        
         ModelConfig::addConfig(NULL, 'components', 'route', 'class',
             'cyneek\yii2\routes\components\route', FALSE);
         
