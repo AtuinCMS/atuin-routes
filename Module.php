@@ -31,9 +31,8 @@ class Module extends \atuin\skeleton\ComposerModule
      */
     public $is_frontend = 1;
 
+    protected $composerPackage = 'cyneek/yii2-routes';
 
-    public function getComposerPackageData()
-    {
-        return 'cyneek/yii2-routes:dev-master';
-    }
+    protected $composerVersion = 'dev-master';
+
 }
