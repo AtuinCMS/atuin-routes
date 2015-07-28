@@ -56,9 +56,9 @@ class AtuinConfig extends \atuin\skeleton\config\AtuinConfig
     public function upConfig()
     {
         ModelConfig::addConfig('app-frontend', 'modules', 'routes', 'routes_dir',
-            dirname(\Yii::$app->getVendorPath()) . 'atuin/routes/frontend', FALSE);
+            dirname(\Yii::$app->getVendorPath()) . '/atuin/routes/frontend', FALSE);
         ModelConfig::addConfig('app-backend', 'modules', 'routes', 'routes_dir',
-            dirname(\Yii::$app->getVendorPath()) . 'atuin/routes/backend', FALSE);
+            dirname(\Yii::$app->getVendorPath()) . '/atuin/routes/backend', FALSE);
         ModelConfig::addConfig(NULL, 'modules', 'routes', 'activate_database_routes',
             1, FALSE);
         ModelConfig::addConfig(NULL, 'modules', 'routes', 'class',
